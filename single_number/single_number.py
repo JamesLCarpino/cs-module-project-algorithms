@@ -16,11 +16,10 @@ def single_number(arr):
 
     # Your code here
 
-    for i in arr:
-        if i == 0:
-            
-    
-        
+    for i in range(0, len(arr) - 1, 2):
+        arr.sort()
+        if arr[i] != arr[i + 1]:
+            return arr[i]
 
 
 if __name__ == "__main__":
