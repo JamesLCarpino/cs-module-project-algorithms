@@ -18,6 +18,13 @@ def sliding_window_max(nums, k):
     # slice(0:2)
     # window = slice(0:2)+2 ?? something like that mabye
     
+    #could take everything out of the array append those to a new array and then find the max of that and print it
+    
+    
+
+    
+
+    
 
 
 if __name__ == "__main__":
