@@ -8,19 +8,21 @@ def moving_zeroes(arr):
     # move each non-zero integer to the left side
     # move zero to the right...
     # if arr[i] == 0 move it
+    # destructure it, match it, append it to a new list
     # need to pop and insert it
     # Your code here
 
-    for i in range(len(arr) - 1):
-        print("this is i", i)
+    zeros = []
+    non_zero = []
 
-        if i == 0:
-            arr.pop(i)
-            arr.insert(-1, i)
-            i += 1
-
-        else:
-            return arr
+    for i in range(len(arr)):
+        if arr[i] == 0:
+            zeros.append(arr[i])
+    for j in range(len(arr)):
+        if arr[j] != 0:
+            non_zero.append(arr[j])
+    new_list = non_zero + zeros
+    return new_list
 
 
 if __name__ == "__main__":
