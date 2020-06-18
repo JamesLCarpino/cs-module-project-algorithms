@@ -5,7 +5,8 @@ Returns: a List of integers
 def product_of_all_other_numbers(arr):
     # Your code here
 
-    pass
+    for i in range(len(arr)-1):
+        
 
 
 if __name__ == '__main__':
