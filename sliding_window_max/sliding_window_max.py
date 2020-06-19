@@ -13,18 +13,17 @@ def sliding_window_max(nums, k):
     # probably need to use slice(0:2) -> to get the first 3 items in the array
 
     # check first 3 items in array, return the largest
-    # add 2 to the index and from that new section return the largest
+    # add 2 to the index and from that new section return the largest to newly made array
     # continue this until hitting the end of the array
     # slice(0:2)
     # window = slice(0:2)+2 ?? something like that mabye
-    
-    #could take everything out of the array append those to a new array and then find the max of that and print it
-    
-    
 
-    
+    # could take everything out of the array append those to a new array and then find the max of that and print it
 
-    
+    max_value = []
+    for i in range(0, len(nums) - (k - 1)):
+        max_value.append(max(nums[i : k + i]))
+    return max_value
 
 
 if __name__ == "__main__":
